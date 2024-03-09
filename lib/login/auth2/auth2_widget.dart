@@ -150,37 +150,24 @@ class _Auth2WidgetState extends State<Auth2Widget>
                   child: Stack(
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(0.28, -0.81),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(8.0),
-                          child: Image.network(
-                            'https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw4fHxnYW1lfGVufDB8fHx8MTcwOTg0NjI3OXww&ixlib=rb-4.0.3&q=80&w=1080',
-                            width: 300.0,
-                            height: 200.0,
-                            fit: BoxFit.cover,
+                          borderRadius: BorderRadius.circular(10.0),
+                          child: Image.asset(
+                            'assets/images/imagemEnterprise-removebg-preview.png',
+                            width: 170.0,
+                            height: 170.0,
+                            fit: BoxFit.fitHeight,
+                            alignment: const Alignment(0.0, 0.0),
                           ),
                         ),
                       ),
-                      Opacity(
+                      const Opacity(
                         opacity: 0.8,
                         child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Stack(
-                            children: [
-                              Align(
-                                alignment: const AlignmentDirectional(0.17, -0.23),
-                                child: Text(
-                                  'MVP.Treinamento',
-                                  textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .override(
-                                        fontFamily: 'Readex Pro',
-                                        fontSize: 35.0,
-                                      ),
-                                ),
-                              ),
-                            ],
+                            children: [],
                           ),
                         ),
                       ),
@@ -253,7 +240,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                 fontSize: 18.0,
                                                 fontWeight: FontWeight.w500,
                                               ),
-                                      indicatorColor: const Color(0xFF4B39EF),
+                                      indicatorColor: const Color(0xFF0D2334),
                                       indicatorWeight: 3.0,
                                       tabs: const [
                                         Tab(
@@ -647,7 +634,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                       0.0,
                                                                       0.0),
                                                           color:
-                                                              const Color(0xFF4B39EF),
+                                                              const Color(0xFF0D2334),
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)
@@ -1363,7 +1350,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                       0.0,
                                                                       0.0),
                                                           color:
-                                                              const Color(0xFF4B39EF),
+                                                              const Color(0xFF0D2334),
                                                           textStyle:
                                                               FlutterFlowTheme.of(
                                                                       context)

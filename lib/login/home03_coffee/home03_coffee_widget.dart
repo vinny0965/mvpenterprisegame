@@ -66,13 +66,13 @@ class _Home03CoffeeWidgetState extends State<Home03CoffeeWidget> {
             key: scaffoldKey,
             backgroundColor: const Color(0xFFF1F4F8),
             appBar: AppBar(
-              backgroundColor: const Color(0xFFF1F4F8),
+              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
               automaticallyImplyLeading: false,
               title: Text(
                 'Home',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       fontFamily: 'Outfit',
-                      color: const Color(0xFF14181B),
+                      color: FlutterFlowTheme.of(context).primaryText,
                       fontSize: 22.0,
                       fontWeight: FontWeight.normal,
                     ),
@@ -89,7 +89,10 @@ class _Home03CoffeeWidgetState extends State<Home03CoffeeWidget> {
                         shape: BoxShape.circle,
                       ),
                       child: Image.network(
-                        currentUserPhoto,
+                        valueOrDefault<String>(
+                          currentUserPhoto,
+                          'https://cdn-icons-png.flaticon.com/512/7368/7368509.png',
+                        ),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -356,7 +359,11 @@ class _Home03CoffeeWidgetState extends State<Home03CoffeeWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.network(
-                                                listViewTreinamentosRecord.capa,
+                                                valueOrDefault<String>(
+                                                  listViewTreinamentosRecord
+                                                      .capa,
+                                                  'https://th.bing.com/th/id/OIP.v-iZQ0Zss3QznGxXxw79cwHaHa?w=1024&h=1024&rs=1&pid=ImgDetMain',
+                                                ),
                                                 width: 70.0,
                                                 height: 100.0,
                                                 fit: BoxFit.cover,
@@ -521,7 +528,7 @@ class _Home03CoffeeWidgetState extends State<Home03CoffeeWidget> {
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
                                     child: Image.network(
-                                      'https://images.unsplash.com/photo-1607109793514-3075a25f6040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBvdXIlMjBvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+                                      'https://www.celum.com/en/wp-content/uploads/sites/2/2022/07/BlogDigitalStrategyConsulting-1-1024x538.png',
                                       width: double.infinity,
                                       height: 140.0,
                                       fit: BoxFit.cover,

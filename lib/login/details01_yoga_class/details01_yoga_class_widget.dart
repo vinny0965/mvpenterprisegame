@@ -105,7 +105,10 @@ class _Details01YogaClassWidgetState extends State<Details01YogaClassWidget> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(12.0),
                     child: Image.network(
-                      details01YogaClassTreinamentosRecord.capa,
+                      valueOrDefault<String>(
+                        details01YogaClassTreinamentosRecord.capa,
+                        'https://miro.medium.com/max/1400/1*MlRAEcBxpvYGZIvd7m0-hA.png',
+                      ),
                       width: MediaQuery.sizeOf(context).width * 1.0,
                       height: 230.0,
                       fit: BoxFit.cover,
@@ -208,7 +211,7 @@ class _Details01YogaClassWidgetState extends State<Details01YogaClassWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
-                                      'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80',
+                                      'https://miro.medium.com/max/1400/1*MlRAEcBxpvYGZIvd7m0-hA.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -260,7 +263,7 @@ class _Details01YogaClassWidgetState extends State<Details01YogaClassWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
-                                      'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80',
+                                      'https://miro.medium.com/max/1400/1*MlRAEcBxpvYGZIvd7m0-hA.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -312,7 +315,7 @@ class _Details01YogaClassWidgetState extends State<Details01YogaClassWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
-                                      'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80',
+                                      'https://miro.medium.com/max/1400/1*MlRAEcBxpvYGZIvd7m0-hA.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -364,7 +367,7 @@ class _Details01YogaClassWidgetState extends State<Details01YogaClassWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
-                                      'https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80',
+                                      'https://miro.medium.com/max/1400/1*MlRAEcBxpvYGZIvd7m0-hA.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),

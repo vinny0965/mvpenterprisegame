@@ -669,17 +669,13 @@ class _Onboarding04WidgetState extends State<Onboarding04Widget>
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 44.0),
                                 child: ClipRRect(
-                                  borderRadius: const BorderRadius.only(
-                                    bottomLeft: Radius.circular(0.0),
-                                    bottomRight: Radius.circular(40.0),
-                                    topLeft: Radius.circular(40.0),
-                                    topRight: Radius.circular(0.0),
-                                  ),
-                                  child: Image.network(
-                                    'https://media.licdn.com/dms/image/D4D03AQFEYjDdXG1ZRg/profile-displayphoto-shrink_400_400/0/1682193593974?e=1715212800&v=beta&t=ofxb-wGka8uqNwQkwhWDd5ZpdeBC3N7Vph0B_od9ju8',
-                                    width: 200.0,
-                                    height: 170.0,
-                                    fit: BoxFit.fitWidth,
+                                  borderRadius: BorderRadius.circular(0.0),
+                                  child: Image.asset(
+                                    'assets/images/imagemEnterprise-removebg-preview.png',
+                                    width: 250.0,
+                                    height: 250.0,
+                                    fit: BoxFit.cover,
+                                    alignment: const Alignment(0.0, 0.0),
                                   ),
                                 ).animateOnPageLoad(animationsMap[
                                     'imageOnPageLoadAnimation4']!),
@@ -756,7 +752,7 @@ class _Onboarding04WidgetState extends State<Onboarding04Widget>
                                         0.0, 0.0, 0.0, 0.0),
                                     iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: const Color(0xFF4B39EF),
+                                    color: const Color(0xFF0D2334),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
