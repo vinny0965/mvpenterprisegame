@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1062553015466",
+    "firebase_url": "https://mvp-treinamento-enterpr-bf0xky-default-rtdb.firebaseio.com",
+    "project_id": "mvp-treinamento-enterpr-bf0xky",
+    "storage_bucket": "mvp-treinamento-enterpr-bf0xky.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062553015466:android:3ef9e72394707769872cd3",
+        "android_client_info": {
+          "package_name": "com.mycompany.mvptreinamentoenterprisegamedesign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYJbzjL0MEjI_qYovLOv0f4YAy28rE_dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
