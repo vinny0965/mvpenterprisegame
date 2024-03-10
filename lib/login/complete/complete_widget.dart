@@ -156,53 +156,63 @@ class _CompleteWidgetState extends State<CompleteWidget> {
                           color: const Color(0x0E000000),
                         ),
                       ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Expanded(
-                            child: Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
-                              child: RichText(
-                                textScaler: MediaQuery.of(context).textScaler,
-                                text: TextSpan(
-                                  children: [
-                                    TextSpan(
-                                      text: '12',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                    ),
-                                    const TextSpan(
-                                      text: ' de',
-                                      style: TextStyle(),
-                                    ),
-                                    const TextSpan(
-                                      text: ' 15',
-                                      style: TextStyle(),
-                                    ),
-                                    const TextSpan(
-                                      text: ' corretas',
-                                      style: TextStyle(),
-                                    )
-                                  ],
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Readex Pro',
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryBackground,
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('Details01YogaClassCopy');
+                        },
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Expanded(
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                child: RichText(
+                                  textScaler: MediaQuery.of(context).textScaler,
+                                  text: TextSpan(
+                                    children: [
+                                      TextSpan(
+                                        text: '12',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                       ),
+                                      const TextSpan(
+                                        text: ' de',
+                                        style: TextStyle(),
+                                      ),
+                                      const TextSpan(
+                                        text: ' 15',
+                                        style: TextStyle(),
+                                      ),
+                                      const TextSpan(
+                                        text: ' corretas',
+                                        style: TextStyle(),
+                                      )
+                                    ],
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Readex Pro',
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                        ),
+                                  ),
+                                  textAlign: TextAlign.start,
                                 ),
-                                textAlign: TextAlign.start,
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -610,7 +610,7 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                             return;
                                                           }
 
-                                                          context.goNamedAuth(
+                                                          context.pushNamedAuth(
                                                               'Onboarding04',
                                                               context.mounted);
                                                         },
@@ -756,36 +756,11 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                         null) {
                                                                       return;
                                                                     }
-                                                                    if (valueOrDefault<
-                                                                            bool>(
-                                                                        currentUserDocument
-                                                                            ?.isAutorized,
-                                                                        false)) {
-                                                                      context.pushNamedAuth(
-                                                                          'Onboarding04',
-                                                                          context
-                                                                              .mounted);
-                                                                    } else {
-                                                                      await showDialog(
-                                                                        context:
-                                                                            context,
-                                                                        builder:
-                                                                            (alertDialogContext) {
-                                                                          return AlertDialog(
-                                                                            title:
-                                                                                const Text('Acesso Negado'),
-                                                                            content:
-                                                                                const Text('Peça permissão ao administrador para login.'),
-                                                                            actions: [
-                                                                              TextButton(
-                                                                                onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: const Text('Ok'),
-                                                                              ),
-                                                                            ],
-                                                                          );
-                                                                        },
-                                                                      );
-                                                                    }
+
+                                                                    context.pushNamedAuth(
+                                                                        'Onboarding04',
+                                                                        context
+                                                                            .mounted);
                                                                   },
                                                                   text:
                                                                       'Continue with Google',
@@ -1291,44 +1266,9 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                             return;
                                                           }
 
-                                                          if (valueOrDefault<
-                                                                  bool>(
-                                                              currentUserDocument
-                                                                  ?.isAutorized,
-                                                              false)) {
-                                                            context.pushNamedAuth(
-                                                                'Onboarding04',
-                                                                context
-                                                                    .mounted);
-                                                          } else {
-                                                            context.pushNamedAuth(
-                                                                'Auth2',
-                                                                context
-                                                                    .mounted);
-
-                                                            ScaffoldMessenger
-                                                                    .of(context)
-                                                                .showSnackBar(
-                                                              SnackBar(
-                                                                content: Text(
-                                                                  'Acesso expirado, solicite uma nova autorização.',
-                                                                  style:
-                                                                      TextStyle(
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                  ),
-                                                                ),
-                                                                duration: const Duration(
-                                                                    milliseconds:
-                                                                        4000),
-                                                                backgroundColor:
-                                                                    FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .secondary,
-                                                              ),
-                                                            );
-                                                          }
+                                                          context.pushNamedAuth(
+                                                              'Onboarding04',
+                                                              context.mounted);
                                                         },
                                                         text: 'Sign In',
                                                         options:
@@ -1456,38 +1396,11 @@ class _Auth2WidgetState extends State<Auth2Widget>
                                                                   null) {
                                                                 return;
                                                               }
-                                                              if (valueOrDefault<
-                                                                      bool>(
-                                                                  currentUserDocument
-                                                                      ?.isAutorized,
-                                                                  false)) {
-                                                                context.pushNamedAuth(
-                                                                    'Onboarding04',
-                                                                    context
-                                                                        .mounted);
-                                                              } else {
-                                                                await showDialog(
-                                                                  context:
-                                                                      context,
-                                                                  builder:
-                                                                      (alertDialogContext) {
-                                                                    return AlertDialog(
-                                                                      title: const Text(
-                                                                          'Acesso negado'),
-                                                                      content: const Text(
-                                                                          'Peça permissão ao administrador para login.'),
-                                                                      actions: [
-                                                                        TextButton(
-                                                                          onPressed: () =>
-                                                                              Navigator.pop(alertDialogContext),
-                                                                          child:
-                                                                              const Text('Ok'),
-                                                                        ),
-                                                                      ],
-                                                                    );
-                                                                  },
-                                                                );
-                                                              }
+
+                                                              context.pushNamedAuth(
+                                                                  'Onboarding04',
+                                                                  context
+                                                                      .mounted);
                                                             },
                                                             text:
                                                                 'Continue with Google',

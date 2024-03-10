@@ -61,4 +61,16 @@ class FFAppState extends ChangeNotifier {
   set urlCorrectD(String value) {
     _urlCorrectD = value;
   }
+
+  int _valorPagamento = 0;
+  int get valorPagamento => _valorPagamento;
+  set valorPagamento(int value) {
+    _valorPagamento = value;
+  }
+
+  bool _asssinaturaAtiva = false;
+  bool get asssinaturaAtiva => _asssinaturaAtiva;
+  set asssinaturaAtiva(bool value) {
+    _asssinaturaAtiva = value;
+  }
 }

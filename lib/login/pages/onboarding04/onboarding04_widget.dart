@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -713,36 +712,7 @@ class _Onboarding04WidgetState extends State<Onboarding04Widget>
                                     0.0, 44.0, 0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
-                                    if (valueOrDefault<bool>(
-                                        currentUserDocument?.isAutorized,
-                                        false)) {
-                                      context.pushNamedAuth(
-                                          'Home03Coffee', context.mounted);
-                                    } else {
-                                      GoRouter.of(context).prepareAuthEvent();
-                                      await authManager.signOut();
-                                      GoRouter.of(context)
-                                          .clearRedirectLocation();
-
-                                      ScaffoldMessenger.of(context)
-                                          .showSnackBar(
-                                        SnackBar(
-                                          content: Text(
-                                            'Seu Acesso Expirou, adiquira uma nova autorização!',
-                                            style: TextStyle(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primaryText,
-                                            ),
-                                          ),
-                                          duration:
-                                              const Duration(milliseconds: 4000),
-                                          backgroundColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondary,
-                                        ),
-                                      );
-                                    }
+                                    context.pushNamed('Home03Coffee');
                                   },
                                   text: 'Início',
                                   options: FFButtonOptions(

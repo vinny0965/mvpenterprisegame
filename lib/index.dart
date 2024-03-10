@@ -10,3 +10,6 @@ export '/login/home07_invoices/home07_invoices_widget.dart'
     show Home07InvoicesWidget;
 export '/login/pages/onboarding04/onboarding04_widget.dart'
     show Onboarding04Widget;
+export '/credit_payment/credit_payment_widget.dart' show CreditPaymentWidget;
+export '/login/details01_yoga_class_copy/details01_yoga_class_copy_widget.dart'
+    show Details01YogaClassCopyWidget;

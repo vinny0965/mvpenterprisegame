@@ -126,6 +126,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Onboarding04',
           path: '/onboarding04',
           builder: (context, params) => const Onboarding04Widget(),
+        ),
+        FFRoute(
+          name: 'creditPayment',
+          path: '/creditPayment',
+          builder: (context, params) => const CreditPaymentWidget(),
+        ),
+        FFRoute(
+          name: 'Details01YogaClassCopy',
+          path: '/details01YogaClassCopy',
+          builder: (context, params) => const Details01YogaClassCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
