@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/backend/stripe/payment_manager.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -180,7 +181,7 @@ class _Details01YogaClassCopyWidgetState
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   setState(() {
-                                    FFAppState().valorPagamento = 100;
+                                    FFAppState().valorPagamento = 10000;
                                   });
                                 },
                                 child: Container(
@@ -243,7 +244,7 @@ class _Details01YogaClassCopyWidgetState
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   setState(() {
-                                    FFAppState().valorPagamento = 170;
+                                    FFAppState().valorPagamento = 17000;
                                   });
                                 },
                                 child: Container(
@@ -306,7 +307,7 @@ class _Details01YogaClassCopyWidgetState
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   setState(() {
-                                    FFAppState().valorPagamento = 250;
+                                    FFAppState().valorPagamento = 25000;
                                   });
                                 },
                                 child: Container(
@@ -369,7 +370,7 @@ class _Details01YogaClassCopyWidgetState
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   setState(() {
-                                    FFAppState().valorPagamento = 300;
+                                    FFAppState().valorPagamento = 30000;
                                   });
                                 },
                                 child: Container(
@@ -451,6 +452,10 @@ class _Details01YogaClassCopyWidgetState
                           );
                         },
                       );
+
+                      await currentUserReference!.update(createUsersRecordData(
+                        isAutorized: true,
+                      ));
                     } else {
                       await showDialog(
                         context: context,

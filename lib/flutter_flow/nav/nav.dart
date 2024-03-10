@@ -136,6 +136,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Details01YogaClassCopy',
           path: '/details01YogaClassCopy',
           builder: (context, params) => const Details01YogaClassCopyWidget(),
+        ),
+        FFRoute(
+          name: 'Profile11',
+          path: '/profile11',
+          builder: (context, params) => const Profile11Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

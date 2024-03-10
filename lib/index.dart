@@ -13,3 +13,4 @@ export '/login/pages/onboarding04/onboarding04_widget.dart'
 export '/credit_payment/credit_payment_widget.dart' show CreditPaymentWidget;
 export '/login/details01_yoga_class_copy/details01_yoga_class_copy_widget.dart'
     show Details01YogaClassCopyWidget;
+export '/login/profile11/profile11_widget.dart' show Profile11Widget;

@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -403,17 +404,22 @@ class _Details01YogaClassWidgetState extends State<Details01YogaClassWidget> {
                         const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 24.0),
                     child: FFButtonWidget(
                       onPressed: () async {
-                        if (details01YogaClassTreinamentosRecord
-                            .hasLiberacao()) {
-                          context.pushNamed(
-                            'Home07Invoices',
-                            queryParameters: {
-                              'request': serializeParam(
-                                details01YogaClassTreinamentosRecord.reference,
-                                ParamType.DocumentReference,
-                              ),
-                            }.withoutNulls,
-                          );
+                        if (details01YogaClassTreinamentosRecord.liberacao) {
+                          if (valueOrDefault<bool>(
+                              currentUserDocument?.isAutorized, false)) {
+                            context.pushNamed(
+                              'Home07Invoices',
+                              queryParameters: {
+                                'request': serializeParam(
+                                  details01YogaClassTreinamentosRecord
+                                      .reference,
+                                  ParamType.DocumentReference,
+                                ),
+                              }.withoutNulls,
+                            );
+                          } else {
+                            context.pushNamed('Details01YogaClassCopy');
+                          }
                         }
                       },
                       text: details01YogaClassTreinamentosRecord.liberacao

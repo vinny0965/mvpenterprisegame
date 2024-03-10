@@ -81,19 +81,28 @@ class _Home03CoffeeWidgetState extends State<Home03CoffeeWidget> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: AuthUserStreamWidget(
-                    builder: (context) => Container(
-                      width: 60.0,
-                      height: 60.0,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                      ),
-                      child: Image.network(
-                        valueOrDefault<String>(
-                          currentUserPhoto,
-                          'https://cdn-icons-png.flaticon.com/512/7368/7368509.png',
+                    builder: (context) => InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('Profile11');
+                      },
+                      child: Container(
+                        width: 60.0,
+                        height: 60.0,
+                        clipBehavior: Clip.antiAlias,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
                         ),
-                        fit: BoxFit.cover,
+                        child: Image.network(
+                          valueOrDefault<String>(
+                            currentUserPhoto,
+                            'https://cdn-icons-png.flaticon.com/512/7368/7368509.png',
+                          ),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
