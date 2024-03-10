@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:webviewx_plus/webviewx_plus.dart';
 import 'details01_yoga_class_copy_model.dart';
 export 'details01_yoga_class_copy_model.dart';
 
@@ -440,18 +439,16 @@ class _Details01YogaClassCopyWidgetState
                       await showDialog(
                         context: context,
                         builder: (alertDialogContext) {
-                          return WebViewAware(
-                            child: AlertDialog(
-                              title: const Text('Pagamento Realizado'),
-                              content: const Text('Pagamento Realizado Com sucesso'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () =>
-                                      Navigator.pop(alertDialogContext),
-                                  child: const Text('Ok'),
-                                ),
-                              ],
-                            ),
+                          return AlertDialog(
+                            title: const Text('Pagamento Realizado'),
+                            content: const Text('Pagamento Realizado Com sucesso'),
+                            actions: [
+                              TextButton(
+                                onPressed: () =>
+                                    Navigator.pop(alertDialogContext),
+                                child: const Text('Ok'),
+                              ),
+                            ],
                           );
                         },
                       );
@@ -463,18 +460,16 @@ class _Details01YogaClassCopyWidgetState
                       await showDialog(
                         context: context,
                         builder: (alertDialogContext) {
-                          return WebViewAware(
-                            child: AlertDialog(
-                              title: const Text('Pagammento não realizado'),
-                              content: const Text('erro no proccessamento'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () =>
-                                      Navigator.pop(alertDialogContext),
-                                  child: const Text('Ok'),
-                                ),
-                              ],
-                            ),
+                          return AlertDialog(
+                            title: const Text('Pagammento não realizado'),
+                            content: const Text('erro no proccessamento'),
+                            actions: [
+                              TextButton(
+                                onPressed: () =>
+                                    Navigator.pop(alertDialogContext),
+                                child: const Text('Ok'),
+                              ),
+                            ],
                           );
                         },
                       );

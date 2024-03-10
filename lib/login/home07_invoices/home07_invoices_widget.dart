@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:webviewx_plus/webviewx_plus.dart';
 import 'home07_invoices_model.dart';
 export 'home07_invoices_model.dart';
 
@@ -181,19 +180,17 @@ class _Home07InvoicesWidgetState extends State<Home07InvoicesWidget> {
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
-                                return WebViewAware(
-                                  child: AlertDialog(
-                                    title: const Text('errado'),
-                                    content: const Text(
-                                        'Você selecionou a alternativa incorreta'),
-                                    actions: [
-                                      TextButton(
-                                        onPressed: () =>
-                                            Navigator.pop(alertDialogContext),
-                                        child: const Text('Ok'),
-                                      ),
-                                    ],
-                                  ),
+                                return AlertDialog(
+                                  title: const Text('errado'),
+                                  content: const Text(
+                                      'Você selecionou a alternativa incorreta'),
+                                  actions: [
+                                    TextButton(
+                                      onPressed: () =>
+                                          Navigator.pop(alertDialogContext),
+                                      child: const Text('Ok'),
+                                    ),
+                                  ],
                                 );
                               },
                             );

@@ -162,7 +162,7 @@ class _CompleteWidgetState extends State<CompleteWidget> {
                         hoverColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onTap: () async {
-                          context.pushNamed('creditPayment');
+                          context.pushNamed('Home03Coffee');
                         },
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
